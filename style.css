@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 52.5%;
+}
+
+body {
+    background: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.nav {
+    /* background-color: black; */
+    height: 10vh;
+}
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.items {
+    display: flex;
+    float: right;
+    color: white;
+    font-size: 2rem;
+    margin-top: -2.4rem;
+}
+
+.item {
+    display: flex;
+    margin: 3rem;
+    margin-top: -.5rem;
+    /* padding: 10px; */
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item:hover{
+    background-color: rgba(214, 206, 206, 0.097);
+    padding: 10px;
+    transition: 200ms ease;
+    /* border: 1px solid white; */
+    
+}
+
+.main {
+    /* border: 2px solid black; */
+    /* margin-top: 20rem; */
+    height: 70vh;
+    margin-top: 5rem;
+
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 13rem; */
+    font-size: 9rem;
+    font-family: 'Kalam', cursive;
+    color: white;
+}
+
+.smallhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    border: 0px;
+    background-color: rgb(230, 230, 12);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(36, 35, 35);
+    margin-top: 2rem;
+    padding: 1.3rem;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+}
+
+
+.button:hover{
+    box-shadow: 4px 4px 20px 10px rgba(62, 255, 40, 0.138);
+    transition: 400ms ease;
+}
+
+/* *:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+} */
+
+/* html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+} */
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 65rem;
+  margin-top: 2rem;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
+
+.footer{
+    height: 10.6vh;
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-widht:600px) {
+    html{
+        font-size: 10%;
+    }
+}
